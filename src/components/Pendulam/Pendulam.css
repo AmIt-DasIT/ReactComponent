@@ -1,0 +1,53 @@
+/* Pendulam Implementation */
+
+.container {
+  min-height: 100vh;
+  background: #223242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .pendulam {
+  width: 30px;
+  height: 30px;
+  background: cyan;
+  border-radius: 50%;
+}
+.container .pendulam:nth-child(1) {
+  animation: anima 1s linear infinite alternate;
+}
+.container .pendulam:last-child {
+  animation: anima1 1s linear infinite alternate;
+}
+
+@keyframes anima {
+  0% {
+    transform: translateX(-165px) translateY(-25px);
+  }
+  30% {
+    transform: translateX(0px);
+  }
+  70% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-165px) translateY(-25px);
+  }
+}
+
+@keyframes anima1 {
+  0% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(165px) translateY(-25px);
+  }
+  70% {
+    transform: translateX(0px);
+  }
+  
+}

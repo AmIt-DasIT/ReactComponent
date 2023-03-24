@@ -1,0 +1,110 @@
+/* SignUp page code................................................... */
+
+.container {
+  min-height: 100vh;
+  background: #223242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .form {
+  position: relative;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #223242;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.container .form .tag {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.container .form .inputBox {
+  padding: 10px 0px 10px 0px;
+  outline: none;
+  border: none;
+  position: relative;
+  height: 50px;
+}
+
+.container .form .inputBox input {
+  height: 20px;
+  width: 300px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  padding-left: 50px;
+  background: transparent;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  color: #fff;
+}
+
+.container .form .inputBox span {
+  position: absolute;
+  left: 18%;
+  padding-top: 8px;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container .form .inputBox i {
+  position: absolute;
+  top: 34%;
+  left: 7%;
+  padding-right: 7px;
+  border-right: 1px solid #00dfc4;
+}
+
+
+.container .form .inputBox input:valid~span,
+.container .form .inputBox input:focus~span {
+  transform: translateY(-20px) translateX(-20px);
+  border: 1px solid #00dfc4;
+  font-size: 12px;
+  border-radius: 13px;
+  padding: 0px 5px 0px 5px;
+  background: #223242;
+  transition: 0.5s;
+  position: absolute;
+  top: 20px;
+}
+
+.container .form .inputBox input:valid,
+.container .form .inputBox input:focus {
+  border: 1px solid #00dfc4;
+  transition: 0.5s;
+}
+
+.container .form .inputBox input[type="submit"] {
+  background: #00dfc4;
+  color: #000;
+  width: 357px;
+  height: 40px;
+  text-align: center;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.container .form .inputBox input[type="submit"]:hover {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}

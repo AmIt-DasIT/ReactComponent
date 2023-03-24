@@ -1,0 +1,63 @@
+/* Ribbon */
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #223243;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container .box {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+
+}
+
+.box span {
+  position: absolute;
+  inset: 0;
+  top: 45%;
+  height: 30px;
+  transition: 3s;
+}
+
+.box span:first-child {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+  background-color: red;
+
+}
+
+.box span:nth-last-child(2) {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  background-color: red;
+}
+
+.box span:first-child.hide {
+  transform: translateX(-100vw) rotate(-30deg);
+  transform-origin: left;
+}
+
+.box span:nth-last-child(2).hide {
+  transform: translateX(100vw) rotate(30deg);
+  transform-origin: right;
+}
+
+
+img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 47%;
+  transition: 1s;
+}
+
+img.hide {
+  transform: translateY(-100vh);
+}

@@ -1,0 +1,103 @@
+/* Loader................................................................ */
+
+.container {
+  min-height: 100vh;
+  background: #010d1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container .loader .arrow {
+  border: 3px solid yellow;
+  border-width: 0px 2px 0px 0px ;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: anima 1s linear infinite;
+}
+
+.container .loader .arrow:nth-child(2) {
+  border: 3px solid #ff0048;
+  border-width: 0px 3px 0px 0px ;
+  animation: anima1 1s linear infinite;
+}
+.container .loader .arrow:last-child {
+  border: 3px solid cyan;
+  border-width: 0px 3px 0px 0px ;
+  animation: anima 1s linear infinite;
+}
+
+@keyframes anima {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes anima1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container .loader .arrow:nth-child(1) {
+  position: absolute;
+  top: 52%;
+  left: 45%;
+}
+.container .loader .arrow .point {
+  position: absolute;
+  top: -15%;
+  left: 34%;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  z-index: 1035;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(255, 255, 0 ,0.5),
+  0px 0px 25px rgba(255, 255, 0 ,0.7);
+}
+.container .loader .arrow .point1 {
+  position: absolute;
+  top: 88.4%;
+  left: 56%;
+  width: 20px;
+  height: 20px;
+  background-color: #ff0048;
+  z-index: 1035;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(255, 0, 72 ,0.5),
+  0px 0px 25px rgba(255, 0, 72 ,0.7);
+}
+.container .loader .arrow .point2 {
+  position: absolute;
+  top: -10%;
+  left: 59%;
+  width: 20px;
+  height: 20px;
+  background-color: cyan;
+  z-index: 1035;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255 ,0.5),
+  0px 0px 25px rgba(0, 255, 255 ,0.7);
+}
+.container .loader .arrow:last-child {
+  position: absolute;
+  top: 52%;
+  right: 45%;
+}
+
+.container .hide1 {
+  position: absolute;
+  background-color: #223243;
+  width: 165px;
+  height: 150px;
+  top: 49.5%;
+  border-radius: 50%;
+}

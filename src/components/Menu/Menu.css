@@ -1,0 +1,27 @@
+.container .box {
+    display: flex;
+    padding: 10px;
+    gap: 6px;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+span {
+    padding: 8px;
+    padding: 8px 18px;
+    border-radius: 19px;
+    cursor: pointer;
+    color: #000;
+    transition: 0.6s;
+    z-index: 10;
+}
+
+.active {
+    transition: 0.4s;
+    background-color: crimson;
+    width: 85px;
+    height: 40px;
+    position: absolute;
+    left: 1;
+    border-radius: 20px;
+}

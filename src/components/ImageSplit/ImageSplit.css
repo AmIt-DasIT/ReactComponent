@@ -1,0 +1,62 @@
+/* Image spliting */
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #223243;
+  color: #fff;
+}
+
+.container .box {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.container .box span {
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9&&fm=jpg&w=400&fit=max');
+  transition: .5s;
+}
+
+.container .box span:nth-child(1)
+{
+  clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+}
+.container .box span:nth-child(2)
+{
+  clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+}
+.container .box span:nth-child(3)
+{
+  clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+}
+.container .box span:nth-child(4)
+{
+  clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+}
+
+.container .box:hover span:nth-child(1)
+{
+  transform: translateY(5px) translateX(-30px) rotate(4deg);
+  transform-origin: right;
+}
+.container .box:hover span:nth-child(2)
+{
+  transform: translateY(-20px) translateX(30px) rotate(-4deg);
+  transform-origin: right;
+}
+.container .box:hover span:nth-child(3)
+{
+  transform: translateY(23px) translateX(30px) rotate(4deg);
+  transform-origin: right;
+}
+.container .box:hover span:nth-child(4)
+{
+  transform: translateY(5px) translateX(-30px) rotate(-4deg);
+  transform-origin: right;
+}

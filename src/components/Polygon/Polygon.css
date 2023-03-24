@@ -1,0 +1,30 @@
+/* Polygon using css */
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #223243;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  clip-path: polygon(78.88% 90.82%, 20.10% 90.08%, 2.65% 33.95%, 50.63% 0.00%, 97.74% 35.15%, 78.88% 90.82%, calc(97.74% - 10.50px) calc(35.15% - -3.27px), calc(50.63% - 0.14px) calc(0.00% - -11.00px), calc(2.65% - -10.42px) calc(33.95% - -3.53px), calc(20.10% - -6.58px) calc(90.08% - 8.82px), calc(78.88% - 6.35px) calc(90.82% - 8.98px), calc(97.74% - 10.50px) calc(35.15% - -3.27px));
+}
+
+.container img {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left: 45%;
+}
