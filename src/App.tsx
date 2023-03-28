@@ -15,12 +15,15 @@ import Cube from './components/Cube/Cube';
 import ImageSplit from './components/ImageSplit/ImageSplit';
 import Ribbon from './components/Ribbon/Ribbon';
 import AnimatedWeb from './components/AnimatedWeb/AnimatedWeb';
-import Loader from './components/Loader/Loader';
+import Loader from './components/LoadingAnimation/Loader/Loader';
 import Sun from './components/Sun/Sun';
 import Pendulam from './components/Pendulam/Pendulam';
 import Signup from './components/Signup/Signup';
 import CardTilt from './components/CardAnimation/CardTilt/CardTilt';
 import Online from './components/Online-offline/Online';
+import LoadingDot from './components/LoadingAnimation/LoadingDot/LoadingDot';
+import ScrollEffect from './components/ScrollEffect/ScrollEffect';
+import Button from './components/Button/Button';
 
 
 
@@ -48,6 +51,9 @@ function App() {
       {/* <Signup /> */}
       {/* <CardTilt /> */}
       {/* <Online />  */}
+      {/* <LoadingDot /> */}
+      {/* <ScrollEffect /> */}
+      <Button />
     </div>
 
   )

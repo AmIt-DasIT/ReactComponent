@@ -1,0 +1,27 @@
+.btn {
+    width: 140px;
+    height: 65px;
+    border: 2px solid crimson;
+    border-top: 0px;
+    border-bottom: 0px;
+    transform: rotateZ(-1deg) skew(40deg);
+    position: absolute;
+    top: -31%;
+    left: 8%;
+}
+
+.btn1 {
+    width: 170px;
+    height: 40px;
+    border: 2px solid crimson;
+    border-left: 0px;
+    border-right: 0px;
+    transform: skew(40deg);
+    position: relative;
+}
+
+.btn__primary {
+    position: absolute;
+    left: 35%;
+    top: 18%;
+}
