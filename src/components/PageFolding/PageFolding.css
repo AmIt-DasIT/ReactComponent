@@ -1,10 +1,25 @@
 .page {
     width: 500px;
     height: 300px;
-    background-image: url('../image.jpg');
+    position: relative;
+    display: flex;
 }
 
-span {
-    width: 100%;
-    height: 25%;
+.page span {
+    width: 25%;
+    height: 100%;
+    background-image: url('../../user.jpg');
+    background-size: contain;
+    transition: 1s;
+}
+
+span:nth-child(odd) {
+    transform: skewY(40deg);
+}
+span:nth-child(even) {
+    transform: skewY(-40deg);
+}
+
+.page:hover span {
+    transform: skewY(0deg);
 }

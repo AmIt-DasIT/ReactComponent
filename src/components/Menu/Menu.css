@@ -19,7 +19,7 @@ span {
 .active {
     transition: 0.4s;
     background-color: crimson;
-    width: 85px;
+    /* width: 83px; */
     height: 40px;
     position: absolute;
     left: 1;

@@ -9,6 +9,7 @@ export default function Menu() {
         let active: any = document.getElementById('active');
         span.forEach((data) => { data.style.color = 'black' });
         active.style.transform = i === 0 ?  `translateX(${ 0  + 'px'})` : `translateX(${span[i].getBoundingClientRect().left - span[0].getBoundingClientRect().left + 'px'})`
+        active.style.width = `${span[i].getBoundingClientRect().width}px`
         span[i].style.color = 'white';
       }
 

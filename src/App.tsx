@@ -24,6 +24,10 @@ import Online from './components/Online-offline/Online';
 import LoadingDot from './components/LoadingAnimation/LoadingDot/LoadingDot';
 import ScrollEffect from './components/ScrollEffect/ScrollEffect';
 import Button from './components/Button/Button';
+import Dropdown from './components/Dropdown/Dropdown';
+import Card from './components/Card/Card';
+import Loading from './components/LoadingAnimation/Loading/Loading';
+import InputSearch from './components/InputSearch/InputSearch';
 
 
 
@@ -45,15 +49,21 @@ function App() {
       {/* <ImageSplit /> */}
       {/* <Ribbon /> */}
       {/* <AnimatedWeb /> */}
-      {/* <Loader /> */}
       {/* <Sun /> */}
       {/* <Pendulam /> */}
       {/* <Signup /> */}
       {/* <CardTilt /> */}
       {/* <Online />  */}
-      {/* <LoadingDot /> */}
       {/* <ScrollEffect /> */}
-      <Button />
+      {/* <Button /> */}
+      {/* <Dropdown /> */}
+      {/* <Card /> */}
+      {/* <Loader /> */}
+      {/* <LoadingDot /> */}
+      {/* <Loading /> */}
+      <InputSearch />
+
+
     </div>
 
   )
