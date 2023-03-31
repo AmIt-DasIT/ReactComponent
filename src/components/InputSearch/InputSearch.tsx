@@ -20,7 +20,7 @@ export default function InputSearch() {
     return (
         <div className='drop_container' id='drop'>
             <div className='drop_details' onClick={() => setState({ ...state, show: !state.show })}>
-                <input name='user' type='text' className='inputbox' id='inputbox' value={state.item} onChange={(e) => setState({ ...state, item: e.target.value, show: true })} />
+                <input name='user' type='text' className='inputbox' id='inputbox' value={state.item} autoComplete='false' onChange={(e) => setState({ ...state, item: e.target.value, show: true })} />
                 <i className={`fa-solid fa-caret-${state.show ? 'up' : 'down'}`}></i>
             </div>
             {state.show && <div className='drop_data'>

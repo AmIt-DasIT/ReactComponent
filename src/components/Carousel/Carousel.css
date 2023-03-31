@@ -1,0 +1,36 @@
+.car_container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+
+.car_details {
+    width: 100%;
+    height: 500px;
+    background-color: crimson;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car_details i {
+    padding-left: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+    transition: 1s;
+}
+
+.car_box {
+    animation: anima 1s ease;
+}
+
+@keyframes anima {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

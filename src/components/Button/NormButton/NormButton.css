@@ -1,0 +1,47 @@
+.btn {
+    width: 130px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+.btn:active {
+    animation: anima 0.5s ease;
+}
+
+@keyframes anima {
+    0% {
+        transform: scale(0.95);
+    }
+    95% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.anim {
+    background-color: rgba(220, 20, 60, 0.2);
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    animation: anim 1s ease;
+}
+
+@keyframes anim {
+    0% {
+        width: 10%;
+        height: 10%;
+        border-radius: 100%;
+    }
+    100% {
+        width: 300px;
+        height: 200px;
+        border-radius: 100%;
+    }
+}

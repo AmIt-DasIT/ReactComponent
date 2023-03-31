@@ -23,12 +23,15 @@ import CardTilt from './components/CardAnimation/CardTilt/CardTilt';
 import Online from './components/Online-offline/Online';
 import LoadingDot from './components/LoadingAnimation/LoadingDot/LoadingDot';
 import ScrollEffect from './components/ScrollEffect/ScrollEffect';
-import Button from './components/Button/Button';
+import Button from './components/Button/RectButton/Button';
 import Dropdown from './components/Dropdown/Dropdown';
 import Card from './components/Card/Card';
 import Loading from './components/LoadingAnimation/Loading/Loading';
 import InputSearch from './components/InputSearch/InputSearch';
 import Confetti from './components/Confetti/Confetti';
+import NormButton from './components/Button/NormButton/NormButton';
+import Carousel from './components/Carousel/Carousel';
+import BoardSwitch from './components/Button/Switch/BoardSwitch/BoardSwitch';
 
 
 
@@ -64,6 +67,9 @@ function App() {
       {/* <Loading /> */}
       {/* <InputSearch /> */}
       <Confetti />
+      {/* <NormButton /> */}
+      {/* <Carousel /> */}
+      <BoardSwitch />
 
 
     </div>
