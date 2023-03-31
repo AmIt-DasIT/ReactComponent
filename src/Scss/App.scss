@@ -1,41 +1,41 @@
-@import './variable';
+@import "./variable";
 
 @function weight($weight-name) {
-    @return map-get($font-weight, $weight-name)
+  @return map-get($font-weight, $weight-name);
 }
 
 @mixin flexCenter($direction) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin theme ($light-theme: true) {
-    @if $light-theme {
-        background-color: lighten($primary-color, 100%);
-        color: darken($text-color, 100%);
-    }
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background-color: lighten($primary-color, 100%);
+    color: darken($text-color, 100%);
+  }
 }
 
 .container {
-    @include flexCenter(column);
-    width: 100%;
-    min-height: 100vh;
-    color: $text-color;
-    background-color: $primary-color;
+  @include flexCenter(column);
+  width: 100%;
+  min-height: 100vh;
+  color: $text-color;
+  background-color: $primary-color;
 
-    // #{&}__paragraph {
-    //     font-weight: weight(bold);
+  // #{&}__paragraph {
+  //     font-weight: weight(bold);
 
-    //     &:hover {
-    //         color: aqua;
-    //     }
-    // }
+  //     &:hover {
+  //         color: aqua;
+  //     }
+  // }
 }
 
 .light {
-@include theme($light-theme: true);
+  @include theme($light-theme: true);
 }
 
 // .container .box {
@@ -67,5 +67,3 @@
 //     border-radius: 20px;
 //     // color: $text-color;
 // }
-
-

@@ -28,6 +28,7 @@ import Dropdown from './components/Dropdown/Dropdown';
 import Card from './components/Card/Card';
 import Loading from './components/LoadingAnimation/Loading/Loading';
 import InputSearch from './components/InputSearch/InputSearch';
+import Confetti from './components/Confetti/Confetti';
 
 
 
@@ -61,7 +62,8 @@ function App() {
       {/* <Loader /> */}
       {/* <LoadingDot /> */}
       {/* <Loading /> */}
-      <InputSearch />
+      {/* <InputSearch /> */}
+      <Confetti />
 
 
     </div>

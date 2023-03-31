@@ -1,0 +1,62 @@
+.span {
+  width: 10px;
+  height: 20px;
+  transform: skew(10deg);
+  background-color: crimson;
+  inset: 0;
+}
+
+.box {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    animation: anima4 2.6s linear infinite;
+}
+
+@keyframes anima4 {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(1000px);
+    }
+}
+
+.anim {
+  animation: anima .3s linear infinite;
+}
+
+@keyframes anima {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.anim1 {
+  animation: anima1 .3s linear infinite;
+}
+
+@keyframes anima1 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.anim2 {
+  animation: anima2 .3s linear infinite;
+}
+
+@keyframes anima2 {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
