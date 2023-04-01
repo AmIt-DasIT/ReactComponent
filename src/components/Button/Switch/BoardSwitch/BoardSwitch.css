@@ -37,6 +37,8 @@
     background-color: transparent;
     margin-right: 3px;
     /* transform: rotate(26deg); */
+    box-shadow: inset 2px -2px 0 1.8px #fff;
+
 }
 
 .toggle {

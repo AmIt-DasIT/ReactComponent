@@ -1,0 +1,58 @@
+.test {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.test .earth {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.test .earth .box {
+    width: 295px;
+    height: 395px;
+    border-radius: 15px;
+    background-color: black;
+    z-index: 1000;
+}
+
+.test .earth::before {
+    content: '';
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background-image: conic-gradient(from 0deg at 50% 50%, transparent 73%, rgb(126, 188, 255) 82%, #00FFFFFF 100%);
+    animation: anima 2s linear infinite;
+
+}
+
+.test .earth::after {
+    content: '';
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background-image: conic-gradient(from 0deg at 50% 50%, transparent 73%, rgb(255, 62, 98) 74%, #FF0067FF 100%);
+    animation: anima 2s linear infinite;
+    animation-delay: -1s;
+}
+
+@keyframes anima {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

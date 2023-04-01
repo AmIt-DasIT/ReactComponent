@@ -30,7 +30,7 @@
     background-color: rgba(220, 20, 60, 0.2);
     transform-origin: center;
     transform: translate(-50%, -50%);
-    animation: anim 1s ease;
+    animation: anim 0.3s ease;
 }
 
 @keyframes anim {

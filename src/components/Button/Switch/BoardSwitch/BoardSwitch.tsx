@@ -15,7 +15,7 @@ export default function BoardSwitch() {
             ball.style.boxShadow = 'none';
         } else {
             ball.style.backgroundColor = `transparent`;
-            ball.style.boxShadow = 'inset 2px -2px 0 1.8px #fff'
+            ball.style.boxShadow = 'inset 2px -2px 0 1.8px #fff';
         }
         state ? ball.classList.add('toggle') : ball.classList.add('toggle_f');
         setTimeout(() => {

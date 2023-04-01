@@ -32,6 +32,9 @@ import Confetti from './components/Confetti/Confetti';
 import NormButton from './components/Button/NormButton/NormButton';
 import Carousel from './components/Carousel/Carousel';
 import BoardSwitch from './components/Button/Switch/BoardSwitch/BoardSwitch';
+import Universe from './components/Universe/Universe';
+import AnimatedCard from './components/CardAnimation/AnimatedCard/AnimatedCard';
+import Ball3d from './components/3dBall/Ball3d';
 
 
 
@@ -66,10 +69,14 @@ function App() {
       {/* <LoadingDot /> */}
       {/* <Loading /> */}
       {/* <InputSearch /> */}
-      <Confetti />
+      {/* <Confetti /> */}
       {/* <NormButton /> */}
       {/* <Carousel /> */}
-      <BoardSwitch />
+      {/* <BoardSwitch /> */}
+      {/* <Universe /> */}
+      {/* <AnimatedCard /> */}
+      {/* <Ball3d /> */}
+      
 
 
     </div>

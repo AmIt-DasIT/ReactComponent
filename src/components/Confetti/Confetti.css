@@ -10,7 +10,8 @@
     position: absolute;
     inset: 0;
     display: flex;
-    animation: anima4 2.6s linear infinite;
+    justify-content: center;
+    animation: anima4 2.6s ease-out infinite;
 }
 
 @keyframes anima4 {
@@ -48,7 +49,7 @@
   }
 }
 
-.anim2 {
+/* .anim2 {
   animation: anima2 .3s linear infinite;
 }
 
@@ -59,4 +60,4 @@
   100% {
     transform: rotateX(360deg);
   }
-}
+} */
