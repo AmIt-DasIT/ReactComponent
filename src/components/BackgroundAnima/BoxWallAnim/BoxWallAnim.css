@@ -1,0 +1,74 @@
+:root {
+    --main-bg-color: rgb(0, 139, 139);
+    --second-bg-color: rgb(255, 127, 80);
+    --third-bg-color: rgb(220, 20, 60);
+}
+
+
+.box {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+    position: relative;
+}
+
+.box .background {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: -35%;
+    top: -30%;
+
+    animation: anima 0.5s linear infinite;
+}
+
+.box:nth-child(1) {
+    border-bottom: 3px solid var(--main-bg-color);
+}
+
+.box:nth-child(2) {
+    border-bottom: 3px solid var(--second-bg-color);
+}
+
+.box:nth-child(3) {
+    border-bottom: 3px solid var(--third-bg-color);
+}
+
+.box:nth-child(1) .background {
+    background: linear-gradient(52deg, transparent 1%, var(--main-bg-color) 2%, transparent 3%, transparent 9%, var(--main-bg-color) 10%,
+            transparent 11%, transparent 20%, var(--main-bg-color) 21%, transparent 22%, transparent 31%, var(--main-bg-color) 32%, transparent 33%,
+            transparent 42%, var(--main-bg-color) 43%, transparent 44%, transparent 53%, var(--main-bg-color) 54%, transparent 55%, transparent 64%,
+            var(--main-bg-color) 65%, transparent 66%, transparent 75%, var(--main-bg-color) 76%, transparent 77%, transparent 86%, var(--main-bg-color) 87%,
+            transparent 88%, transparent 97%, var(--main-bg-color) 98%, transparent);
+}
+
+.box:nth-child(2) .background {
+    background: linear-gradient(52deg, transparent 1%, var(--second-bg-color) 2%, transparent 3%, transparent 9%, var(--second-bg-color) 10%,
+            transparent 11%, transparent 20%, var(--second-bg-color) 21%, transparent 22%, transparent 31%, var(--second-bg-color) 32%, transparent 33%,
+            transparent 42%, var(--second-bg-color) 43%, transparent 44%, transparent 53%, var(--second-bg-color) 54%, transparent 55%, transparent 64%,
+            var(--second-bg-color) 65%, transparent 66%, transparent 75%, var(--second-bg-color) 76%, transparent 77%, transparent 86%, var(--second-bg-color) 87%,
+            transparent 88%, transparent 97%, var(--second-bg-color) 98%, transparent);
+}
+
+.box:nth-child(3) .background {
+    background: linear-gradient(52deg, transparent 1%, var(--third-bg-color) 2%, transparent 3%, transparent 9%, var(--third-bg-color) 10%,
+            transparent 11%, transparent 20%, var(--third-bg-color) 21%, transparent 22%, transparent 31%, var(--third-bg-color) 32%, transparent 33%,
+            transparent 42%, var(--third-bg-color) 43%, transparent 44%, transparent 53%, var(--third-bg-color) 54%, transparent 55%, transparent 64%,
+            var(--third-bg-color) 65%, transparent 66%, transparent 75%, var(--third-bg-color) 76%, transparent 77%, transparent 86%, var(--third-bg-color) 87%,
+            transparent 88%, transparent 97%, var(--third-bg-color) 98%, transparent);
+}
+
+
+
+
+@keyframes anima {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+}

@@ -35,6 +35,9 @@ import BoardSwitch from './components/Button/Switch/BoardSwitch/BoardSwitch';
 import Universe from './components/Universe/Universe';
 import AnimatedCard from './components/CardAnimation/AnimatedCard/AnimatedCard';
 import Ball3d from './components/3dBall/Ball3d';
+import Navbar from './components/Navbar/Navbar';
+import BoxWallAnim from './components/BackgroundAnima/BoxWallAnim/BoxWallAnim';
+import BackWallMouse from './components/BackgroundAnima/BackWallMouse/BackWallMouse';
 
 
 
@@ -76,7 +79,11 @@ function App() {
       {/* <Universe /> */}
       {/* <AnimatedCard /> */}
       {/* <Ball3d /> */}
+      {/* <Navbar /> */}
+      {/* <BoxWallAnim /> */}
+      {/* <BackWallMouse /> */}
       
+
 
 
     </div>
