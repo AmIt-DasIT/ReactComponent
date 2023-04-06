@@ -1,0 +1,18 @@
+.text {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.blink {
+    font-weight: 800;
+    animation: anima 0.4s ease infinite;
+}
+
+@keyframes anima {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

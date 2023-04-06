@@ -13,7 +13,7 @@
 
 @mixin theme($light-theme: true) {
   @if $light-theme {
-    background-color: lighten($primary-color, 100%);
+    // background-color: lighten($primary-color, 100%);
     color: darken($text-color, 100%);
   }
 }
@@ -68,3 +68,16 @@
 //     border-radius: 20px;
 //     // color: $text-color;
 // }
+
+
+
+.blinking-cursor
+  {user-select: none;
+  animation: blink 1s steps(2, start) infinite}
+  
+  @keyframes blink
+   {
+    to {
+      visibility: hidden;
+    }
+   }

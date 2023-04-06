@@ -1,0 +1,70 @@
+.back {
+    width: 600px;
+    height: 150px;
+    position: absolute;
+    top: 43%;
+    left: 0;
+
+}
+
+
+.text {
+    display: flex;
+    font-size: 10em;
+    font-weight: 700;
+    transform-origin: right;
+    color: yellowgreen;
+}
+
+.text span {
+    /* animation: shadow 3s linear infinite; */
+    animation: deepshadow 1s linear infinite alternate;
+}
+
+@keyframes shadow {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(50px);
+        text-shadow: 13px 13px 24px rgba(0, 0, 0, 1);
+    }
+    100% {
+        transform: translate(100px);
+    }
+}
+
+@keyframes deepshadow {
+    0% {
+        text-shadow: 13px 13px 24px rgba(0, 0, 0, 1);
+    }
+    
+    100% {
+        text-shadow: 13px 13px 44px rgba(0, 0, 0, 1);
+    }
+}
+
+
+/* This is for shadow animation */
+
+.text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.text span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.text span:nth-child(3) {
+    animation-delay: 0.8s;
+}
+.text span:nth-child(4) {
+    animation-delay: 1.2s;
+}
+.text span:nth-child(5) {
+    animation-delay: 1.6s;
+}
+.text span:nth-child(6) {
+    animation-delay: 2s;
+}
+.text span:nth-child(7) {
+    animation-delay: 2.4s;
+}
