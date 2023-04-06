@@ -9,14 +9,14 @@
     position: relative;
     background-color: #fff;
     overflow: hidden;
+    resize: both;
 }
 
-.box .cursor {
-    transform-style: preserve-3d;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    border-radius: 50%;
-    background: linear-gradient(blue, red);
+.box .text {
+    font-size: 35px;
+    font-weight: 700;
+    background: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
