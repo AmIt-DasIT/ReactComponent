@@ -38,6 +38,7 @@ import Ball3d from './components/3dBall/Ball3d';
 import Navbar from './components/Navbar/Navbar';
 import BoxWallAnim from './components/BackgroundAnima/BoxWallAnim/BoxWallAnim';
 import BackWallMouse from './components/BackgroundAnima/BackWallMouse/BackWallMouse';
+import Practice from './components/1PracticeDesign/Practice';
 
 
 
@@ -85,6 +86,9 @@ function App() {
       
 
 
+
+      <Practice />
+      
 
     </div>
 

@@ -1,0 +1,22 @@
+.box {
+    width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.box .cursor {
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(blue, red);
+}
+
