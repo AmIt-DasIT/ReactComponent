@@ -1,0 +1,120 @@
+.box {
+    width: 160px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.block {
+    width: 0%;
+    height: inherit;
+    background: #ffb510;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+    display: flex;
+}
+
+h1 {
+    font-family: 'Poppins';
+    color: #fff;
+    font-size: 32px;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+.ball {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: #ffb510;
+    animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+    animation-delay: 2s;
+    margin-left: 5px;
+    margin-top: -10px;
+    position: absolute;
+    bottom: 13px;
+    right: -12px;
+}
+
+
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        width: 0px;
+        height: 0px;
+        background: #e9d856;
+        border: 0px solid #ddd;
+        opacity: 0;
+    }
+
+    50% {
+        width: 10px;
+        height: 10px;
+        background: #e9d856;
+        opacity: 1;
+        bottom: 45px;
+    }
+
+    65% {
+        width: 7px;
+        height: 7px;
+        bottom: 0px;
+        width: 15px
+    }
+
+    80% {
+        width: 10px;
+        height: 10px;
+        bottom: 20px
+    }
+
+    100% {
+        width: 7px;
+        height: 7px;
+        background: #e9d856;
+        border: 0px solid #222;
+        bottom: 13px;
+    }
+}

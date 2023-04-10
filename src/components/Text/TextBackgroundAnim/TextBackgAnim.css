@@ -1,0 +1,31 @@
+.box {
+    /* height: 320px; */
+    /* width: 250px; */
+    border-radius: 10px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: horizontal;
+}
+
+.box .text {
+    animation: animateBg 10s linear infinite;
+    font-size: 55px;
+    font-weight: 700;
+    background-size: 100% 1100%;
+    /* background-image: linear-gradient(0deg, #cf5c5c, #c19b4a, #def2a0, #c6ee4a, #42eca6, #64b3d9, #208ea2, #498ada, #5b73df, #897ed3, #cf5c5c, #c19b4a); */
+    background-image: url('../../../image.jpg');
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes animateBg {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}

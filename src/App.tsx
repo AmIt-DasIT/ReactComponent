@@ -39,6 +39,15 @@ import Navbar from './components/Navbar/Navbar';
 import BoxWallAnim from './components/BackgroundAnima/BoxWallAnim/BoxWallAnim';
 import BackWallMouse from './components/BackgroundAnima/BackWallMouse/BackWallMouse';
 import Practice from './components/1PracticeDesign/Practice';
+import TextAnima from './components/Text/Text Anima Slider/TextAnima';
+import RotatingText from './components/Text/RotatingText/RotatingText';
+import TextCuttingAmin from './components/Text/TextCuttingAnim/TextCuttingAmin';
+import TextColorAnim from './components/Text/TextColoringAnim/TextColorAnim';
+import TextBackgAnim from './components/Text/TextBackgroundAnim/TextBackgAnim';
+import TextSvgEffect from './components/Text/TextSvgEffect/TextSvgEffect';
+import TextShadowAnim from './components/Text/TextShadowAnim/TextShadowAnim';
+import TextAriseHidden from './components/Text/TextAriseHideen/TextAriseHidden';
+import BallDrop from './components/BallDrop/BallDrop';
 
 
 
@@ -83,11 +92,18 @@ function App() {
       {/* <Navbar /> */}
       {/* <BoxWallAnim /> */}
       {/* <BackWallMouse /> */}
-      
+      {/* <TextAnima /> */}
+      {/* <RotatingText /> */}
+      {/* <TextCuttingAmin /> */}
+      {/* <TextColorAnim /> */}
+      {/* <Practice /> */}
+      {/* <TextBackgAnim /> */}
+      {/* <TextSvgEffect /> */}
+      {/* <TextShadowAnim /> */}
+      {/* <TextAriseHidden /> */}
+      <BallDrop />
 
 
-
-      <Practice />
       
 
     </div>

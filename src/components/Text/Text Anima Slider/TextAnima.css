@@ -1,0 +1,37 @@
+.text {
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+}
+
+.text .box {
+    width: 200px;
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+.text .box .slide {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    transition: 5s;
+    animation: anima 5s infinite;
+}
+
+@keyframes anima {
+    0% {
+        top: 0em;
+    }
+    25% {
+        top: -1.3em;
+    }
+    50% {
+        top: -2.6em;
+    }
+    75% {
+        top: -4em;
+    }
+}
