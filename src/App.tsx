@@ -48,6 +48,8 @@ import TextSvgEffect from './components/Text/TextSvgEffect/TextSvgEffect';
 import TextShadowAnim from './components/Text/TextShadowAnim/TextShadowAnim';
 import TextAriseHidden from './components/Text/TextAriseHideen/TextAriseHidden';
 import BallDrop from './components/BallDrop/BallDrop';
+import Tree from './components/Tree/Tree';
+import Parallex from './components/Parallex/Parallex';
 
 
 
@@ -96,12 +98,14 @@ function App() {
       {/* <RotatingText /> */}
       {/* <TextCuttingAmin /> */}
       {/* <TextColorAnim /> */}
-      {/* <Practice /> */}
       {/* <TextBackgAnim /> */}
       {/* <TextSvgEffect /> */}
       {/* <TextShadowAnim /> */}
       {/* <TextAriseHidden /> */}
-      <BallDrop />
+      {/* <BallDrop /> */}
+      {/* <Tree /> */}
+      {/* <Parallex /> */}
+      <Practice />
 
 
       

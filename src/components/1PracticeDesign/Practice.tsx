@@ -2,17 +2,24 @@ import React from "react";
 import "./Practice.css";
 
 export default function Practice() {
-  window.addEventListener("mousemove", (e) => {
-    const cursor: any = document.getElementById("cursor");
-    console.log(cursor.getBoundingClientRect().y)
-    cursor.style.transform = `rotate(${cursor.getBoundingClientRect().y - e.y}deg)`
-    console.log(e)
-    // cursor.style.top = e.y + "px";
-    // cursor.style.left = e.x + "px";
-  });
+
   return (
     <div className="box">
-     <div className="cursor" id="cursor"></div>
+      <div className="parallax-one">
+        <div className="text">Parallax 1</div>
+      </div>
+      <div className="parallax-two">
+        <div className="text">Parallax 2</div>
+      </div>
+      <div className="parallax-three">
+        <div className="text">Parallax 3</div>
+      </div>
+      <div className="parallax-four">
+        <div className="text">Parallax 4</div>
+      </div>
+      <div className="parallax-five">
+        <div className="text">Parallax 5</div>
+      </div>
     </div>
   );
 }

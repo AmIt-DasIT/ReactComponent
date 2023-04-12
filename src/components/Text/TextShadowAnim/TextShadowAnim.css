@@ -17,8 +17,8 @@
 }
 
 .text span {
-    /* animation: shadow 3s linear infinite; */
-    animation: deepshadow 1s linear infinite alternate;
+    animation: shadow 3s linear infinite;
+    /* animation: deepshadow 1s linear infinite alternate; */
 }
 
 @keyframes shadow {

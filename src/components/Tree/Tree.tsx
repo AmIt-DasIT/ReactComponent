@@ -1,8 +1,7 @@
 import React from 'react';
-import './BallDrop.css';
-import 'css-doodle';
+import './Tree.css';
 
-export default function BallDrop() {
+export default function Tree() {
     return (
         <div className="mud">
             <div className='tree'>
