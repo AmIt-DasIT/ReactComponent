@@ -1,18 +1,23 @@
 .box {
-    width: 100vw;
-    min-height: 100vh;
-    text-align: center;
-    word-wrap: break-word;
+    width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    resize: both;
 }
 
-.parallax-one {
-    width: 100%;
-    background-image: url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80');
-    height: 100vh;
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.box .text {
+    font-size: 35px;
+    font-weight: 700;
+    background: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .parallax-two {
