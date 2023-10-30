@@ -2,6 +2,18 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmIt-DasIT/ReactComponent.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -20,6 +32,10 @@
     "vanilla-tilt": "^1.8.0",
     "web-vitals": "^2.1.4"
   },
+   "bugs": {
+    "url": "https://github.com/AmIt-DasIT/ReactComponent/issues"
+  },
+  "homepage": "https://github.com/AmIt-DasIT/ReactComponent",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
