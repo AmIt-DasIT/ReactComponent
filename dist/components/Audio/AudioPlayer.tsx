@@ -80,7 +80,7 @@ export default function AudioPlayer() {
 
     return (
         <div className="container">
-            <div className="box">
+            {/* <div className="box">
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <span style={{ fontSize: '15px' }}>{songArray[count]?.albumName}</span>
                     <span style={{ fontSize: '12px' }}>{songArray[count]?.artistName}</span>
@@ -109,7 +109,7 @@ export default function AudioPlayer() {
                         <i className="fa fa-solid fa-play  fa-2xl" onClick={playSong}></i>}
                     <i className={`fa fa-solid fa-forward-step fa-xl`} onClick={() => (setCount(count => count < songArray.length - 1 ? count + 1 : 0), setVal('next'))}></i>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

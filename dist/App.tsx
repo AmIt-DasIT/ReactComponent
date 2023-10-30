@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Reorder, motion, progress } from "framer-motion";
-import './Scss/App.scss';
-import AudioPlayer from './components/Audio/AudioPlayer';
+// import './Scss/App.scss';
+// import AudioPlayer from './components/Audio/AudioPlayer';
 import PageFolding from './components/PageFolding/PageFolding';
 import Menu from './components/Menu/Menu';
 import CardFlip from './components/CardAnimation/CardFlip/CardFlip';
@@ -16,7 +16,7 @@ import ImageSplit from './components/ImageSplit/ImageSplit';
 import Ribbon from './components/Ribbon/Ribbon';
 import AnimatedWeb from './components/AnimatedWeb/AnimatedWeb';
 import Loader from './components/LoadingAnimation/Loader/Loader';
-import Sun from './components/Sun/Sun';
+// import Sun from './components/Sun/Sun';
 import Pendulam from './components/Pendulam/Pendulam';
 import Signup from './components/Signup/Signup';
 import CardTilt from './components/CardAnimation/CardTilt/CardTilt';
@@ -49,7 +49,8 @@ import TextShadowAnim from './components/Text/TextShadowAnim/TextShadowAnim';
 import TextAriseHidden from './components/Text/TextAriseHideen/TextAriseHidden';
 import BallDrop from './components/BallDrop/BallDrop';
 import Tree from './components/Tree/Tree';
-import Parallex from './components/Parallex/Parallex';
+import Parallex from 'react-normal-ui/src/components/Parallex/Parallex';
+// import Parallex from './components/Parallex/Parallex';
 
 
 
@@ -104,8 +105,8 @@ function App() {
       {/* <TextAriseHidden /> */}
       {/* <BallDrop /> */}
       {/* <Tree /> */}
-      {/* <Parallex /> */}
-      <Practice />
+      <Parallex /> 
+      {/* <Practice /> */}
 
 
       
