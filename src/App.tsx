@@ -50,6 +50,7 @@ import TextAriseHidden from './components/Text/TextAriseHideen/TextAriseHidden';
 import BallDrop from './components/BallDrop/BallDrop';
 import Tree from './components/Tree/Tree';
 import Parallex from './components/Parallex/Parallex';
+import Datagrid from './components/Datagrid/Datagrid';
 
 
 
@@ -105,8 +106,8 @@ function App() {
       {/* <BallDrop /> */}
       {/* <Tree /> */}
       {/* <Parallex /> */}
-      <Practice />
-
+      {/* <Practice /> */}
+      <Datagrid />
 
       
 
