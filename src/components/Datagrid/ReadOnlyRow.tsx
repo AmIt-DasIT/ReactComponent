@@ -25,14 +25,14 @@ const ReadOnlyRow: React.FC<ReadOnlyRowProps> = ({ contact, handleEditClick, han
         <button
           type="button"
           onClick={(event) => handleEditClick(event, contact)}
-          className="p-1 text-white bg-blue-500 rounded hover:bg-blue-600"
+          className="p-1 text-white bg-blue-500 rounded hover:bg-blue-600 w-16"
         >
           Edit
         </button>
         <button
           type="button"
           onClick={() => handleDeleteClick(contact.id)}
-          className="p-1 text-white bg-red-500 rounded hover:bg-red-600"
+          className="p-1 text-white bg-red-500 rounded hover:bg-red-600 w-16"
         >
           Delete
         </button>

@@ -28,7 +28,7 @@ const EditableRow: React.FC<EditableRowProps> = ({
           name="fullName"
           value={editFormData.id}
           disabled
-          className="w-full p-1 border border-gray-300 rounded"
+          className="w-full pl-2.5 p-1 border border-gray-300 rounded disabled:bg-gray-100"
         />
       </td>
       <td className="p-2">
@@ -39,7 +39,7 @@ const EditableRow: React.FC<EditableRowProps> = ({
           name="fullName"
           value={editFormData.fullName}
           onChange={handleEditFormChange}
-          className="w-full p-1 border border-gray-300 rounded"
+          className="w-full pl-2.5 p-1 border border-gray-300 rounded"
         />
       </td>
       <td className="p-2">
@@ -50,7 +50,7 @@ const EditableRow: React.FC<EditableRowProps> = ({
           name="address"
           value={editFormData.address}
           onChange={handleEditFormChange}
-          className="w-full p-1 border border-gray-300 rounded"
+          className="w-full pl-2.5 p-1 border border-gray-300 rounded"
         />
       </td>
       <td className="p-2">
@@ -61,7 +61,7 @@ const EditableRow: React.FC<EditableRowProps> = ({
           name="phoneNumber"
           value={editFormData.phoneNumber}
           onChange={handleEditFormChange}
-          className="w-full p-1 border border-gray-300 rounded"
+          className="w-full pl-2.5 p-1 border border-gray-300 rounded"
         />
       </td>
       <td className="p-2">
@@ -72,20 +72,20 @@ const EditableRow: React.FC<EditableRowProps> = ({
           name="email"
           value={editFormData.email}
           onChange={handleEditFormChange}
-          className="w-full p-1 border border-gray-300 rounded"
+          className="w-full pl-2.5 p-1 border border-gray-300 rounded"
         />
       </td>
       <td className="p-2 flex gap-2">
         <button
           type="submit"
-          className="p-1 text-white bg-green-500 rounded hover:bg-green-600"
+          className="p-1 text-white bg-green-500 rounded hover:bg-green-600 w-16"
         >
           Save
         </button>
         <button
           type="button"
           onClick={handleCancelClick}
-          className="p-1 text-white bg-red-500 rounded hover:bg-red-600"
+          className="p-1 text-white bg-red-500 rounded hover:bg-red-600 w-16"
         >
           Cancel
         </button>

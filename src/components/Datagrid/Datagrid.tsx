@@ -168,15 +168,15 @@ const Datagrid: React.FC = () => {
         </table>
       </form>
 
-      <h2 className="mt-4 mb-2 text-lg font-semibold">Add a Contact</h2>
-      <form onSubmit={handleAddFormSubmit} className="flex flex-col gap-2">
+      <h2 className="mt-4 mb-2 text-lg font-semibold text-white">Add a Contact</h2>
+      <form onSubmit={handleAddFormSubmit} className="flex gap-2">
         <input
           type="text"
           name="fullName"
           required
           placeholder="Enter a name..."
           onChange={handleAddFormChange}
-          className="p-2 border border-gray-300 rounded"
+          className="px-2 border border-gray-300 rounded outline-none h-9 "
         />
         <input
           type="text"
@@ -184,7 +184,7 @@ const Datagrid: React.FC = () => {
           required
           placeholder="Enter an address..."
           onChange={handleAddFormChange}
-          className="p-2 border border-gray-300 rounded"
+          className="px-2 border border-gray-300 rounded outline-none h-9 "
         />
         <input
           type="text"
@@ -192,7 +192,7 @@ const Datagrid: React.FC = () => {
           required
           placeholder="Enter a phone number..."
           onChange={handleAddFormChange}
-          className="p-2 border border-gray-300 rounded"
+          className="px-2 border border-gray-300 rounded outline-none h-9 "
         />
         <input
           type="email"
@@ -200,11 +200,11 @@ const Datagrid: React.FC = () => {
           required
           placeholder="Enter an email..."
           onChange={handleAddFormChange}
-          className="p-2 border border-gray-300 rounded"
+          className="px-2 border border-gray-300 rounded outline-none h-9 "
         />
         <button
           type="submit"
-          className="p-2 mt-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+          className="h-9 w-20 text-white bg-blue-500 rounded hover:bg-blue-600"
         >
           Add
         </button>

@@ -57,7 +57,7 @@ import Datagrid from './components/Datagrid/Datagrid';
 function App() {
 
   return (
-    <div className='container'>
+    <div className='bg-slate-950 h-screen p-40'>
       {/* <AudioPlayer /> */}
       {/* <PageFolding /> */}
       {/* <Menu /> */}
